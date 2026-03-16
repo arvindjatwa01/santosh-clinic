@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import HealthTicker from "../components/HealthTicker";
 import Stats from "../components/Stats";
@@ -11,15 +10,10 @@ import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
 import Appointment from "../components/Appointment";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import FloatingButtons from "../components/FloatingButtons";
-import MobileStickyCTA from "../components/MobileStickyCTA";
-import ExitIntent from "../components/ExitIntent";
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Hero />
       <HealthTicker />
       <Stats />
@@ -32,10 +26,6 @@ export default function Home() {
       <FAQ />
       <Appointment />
       <Contact />
-      <Footer />
-      <FloatingButtons />
-      <MobileStickyCTA />
-      <ExitIntent />
     </main>
   );
 }

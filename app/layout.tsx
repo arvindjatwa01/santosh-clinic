@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import FloatingButtons from "../components/FloatingButtons";
+import MobileStickyCTA from "../components/MobileStickyCTA";
+import ExitIntent from "../components/ExitIntent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -141,7 +146,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <Navbar />
+        {children}
+        <Footer />
+        <FloatingButtons />
+        <MobileStickyCTA />
+        <ExitIntent />
+      </body>
     </html>
   );
 }

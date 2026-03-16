@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { clinicInfo, whatsappMessage } from "../data/content";
 
 const navItems = [
@@ -46,10 +47,12 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
+  const pathname = usePathname();
+  const isHome = pathname === "/";
   const waMsg = whatsappMessage;
-  const navBg = scrolled ? "#1a5c3a" : "transparent";
-  const textColor = scrolled ? "#dcf0e6" : "#ffffff";
-  const logoTextColor = scrolled ? "#ffffff" : "#ffffff";
+  const navBg = scrolled || !isHome ? "#1a5c3a" : "transparent";
+  const textColor = scrolled || !isHome ? "#dcf0e6" : "#ffffff";
+  const logoTextColor = "#ffffff";
 
   return (
     <motion.nav
