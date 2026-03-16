@@ -4,7 +4,7 @@ export const clinicInfo = {
   qualifications: "BHMS, DNHE",
   tagline: "Natural Healing, Lasting Wellness",
   description:
-    "Providing compassionate, evidence-based homeopathic care to the people of Jaipur for over 10 years. We treat the root cause — not just the symptoms.",
+    "Providing compassionate, evidence-based homeopathic care to the people of Jaipur. We treat the root cause — not just the symptoms.",
   address: "Siyaram Market, Kapurawala Road, Muhana, Jaipur, Rajasthan",
   phone: "+91 83849 06044",
   phoneRaw: "918384906044",

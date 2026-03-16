@@ -48,8 +48,8 @@ export default function Navbar() {
 
   const waMsg = whatsappMessage;
   const navBg = scrolled ? "#1a5c3a" : "transparent";
-  const textColor = scrolled ? "#dcf0e6" : "#1a5c3a";
-  const logoTextColor = scrolled ? "#ffffff" : "#1a5c3a";
+  const textColor = scrolled ? "#dcf0e6" : "#ffffff";
+  const logoTextColor = scrolled ? "#ffffff" : "#ffffff";
 
   return (
     <motion.nav
@@ -65,7 +65,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md shrink-0"
-              style={{ backgroundColor: scrolled ? "#f0a500" : "#1a5c3a" }}
+              style={{ backgroundColor: "#f0a500" }}
             >
               S
             </div>
@@ -142,7 +142,7 @@ export default function Navbar() {
             className="lg:hidden p-2 rounded-md"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
-            style={{ color: scrolled ? "#ffffff" : "#1a5c3a" }}
+            style={{ color: "#ffffff" }}
           >
             <div className="w-6 flex flex-col gap-1.5">
               <span className={`block h-0.5 bg-current transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
